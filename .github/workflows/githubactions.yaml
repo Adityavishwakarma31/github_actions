@@ -3,7 +3,7 @@ run-name: For-practice
 on: [push]
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     steps:
       - uses: actions/checkout@v4
       - run: echo "Hello"
