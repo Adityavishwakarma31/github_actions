@@ -3,7 +3,7 @@ run-name: For-practice
 on: [push]
 jobs:
   build:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - run: touch file1 file3
