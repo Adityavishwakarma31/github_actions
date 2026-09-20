@@ -1,14 +1,16 @@
 name: GitHub Actions Demo
 run-name: For-practice
 on:
-  push:
-    paths:
-      - '**.md'
+  workflow_dispatch: 
+env:
+  IMAGE_NAME: adityavishwakarma31/django-todo-app
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: docker://alpine:3.8
-      - run: sudo docker ps
+      - name: pull image
+        run: docker pull ${{env.IMAGE_NAME}}
+      - name: list of images
+        run: docker images
         
       
