@@ -1,6 +1,9 @@
 name: GitHub Actions Demo
 run-name: For-practice
-on: [push]
+on:
+  push:
+    paths:
+      - '**.md'
 jobs:
   build:
     runs-on: ubuntu-latest
