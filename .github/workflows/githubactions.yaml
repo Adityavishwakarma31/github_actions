@@ -1,7 +1,7 @@
 name: GitHub Actions Demo
 run-name: For-practice
-on:
-  workflow_dispatch: 
+on: [push]
+
 env:
   IMAGE_NAME: adityavishwakarma31/django-todo-app
 jobs:
